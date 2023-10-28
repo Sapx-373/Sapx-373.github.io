@@ -1,0 +1,281 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+h1{ font-size: 4em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.2em;}
+ul{ list-style: none;}
+li{ font-size: 1.2em;}
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    color: white;
+    background-color: #F9B572;
+}
+button:hover{
+    background-color: #f7983a;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.color-acento{ color: #f7983a;}
+
+header{
+    background-color: rgb(231, 228, 228);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #f7983a;
+    font-size: 2em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover{
+    color: #f7983a;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(R1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hero h1{
+    color: white;
+}
+#hero button{
+    font-size: 1.8em;
+}
+#somos .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#informacion{
+    background-color: rgb(30,30,30);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#informacion .container{
+    
+    padding: 100px 12px;
+    
+}
+
+#informacion h2{
+    margin-top: 0;
+    font-size: 3;
+}
+
+#informacion p{
+    display: none;
+}
+#informacion .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(B1.jpeg);
+   
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(B2.jpg);
+  
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(B3.jpg);
+   
+}
+#horarios .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#horarios li{
+    margin: 16px 0px;
+    font-weight: bold;
+
+}
+
+#opiniones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    background-color: black;
+    color: white;
+}
+#opiniones h2{
+    font-size: 9vw;
+}
+#opiniones button{
+    font-size: 4vw;
+}
+#opiniones input{
+    font-size: 2vw;
+    margin: 15px;
+}
+footer{
+    background-color: rgb(230,230,230);
+}
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #somos .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #somos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #somos h2{
+        margin-top: 0px;
+    }
+    #somos .img-container{
+        background-image: url(C2.avif);
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 50%;
+    }
+
+    #informacion .info-cartas{
+        display: flex;
+        justify-content: center;
+
+    }
+    #informacion p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #informacion h3{
+        margin-top: 0;
+
+    }
+    #informacion .carta{
+        padding: 50px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+
+    }
+    #horarios {
+        background-image: url(D1.jpg);
+        background-repeat: no-repeat;
+        background-size: 400px 300px;
+        background-position: calc(100vw - 300px) 220px;
+    }
+    #horarios .container{
+        text-align: initial;
+
+    }
+    #horarios ul{
+        margin-left: 100px;
+    }
+    #opiniones h2{
+        font-size: 5em;
+    }
+    #opiniones button{
+        font-size: 2em;
+    }
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+@media (min-width: 950px){
+    #horarios{
+        margin: 15px;
+        background-position: calc(100vw - 500px);
+        background-size: 700px 500px;
+        
+    }
+}
